@@ -14,7 +14,11 @@
     height: fit-content;
 }
 @media screen and (max-width: 768px) {
-    .about-container {
-        max-width: 90%; /* Reducimos aún más el ancho máximo en dispositivos móviles */
+    .about{
+     height: 110vh; /* Cambiamos la altura a 'auto' para ajustarla automáticamente */
+       width: fit-content;
+    }
+    .about-container{
+        margin-top: 50px;
     }
 }
