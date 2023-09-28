@@ -13,3 +13,8 @@
     width: 60vw;
     height: fit-content;
 }
+@media screen and (max-width: 768px) {
+    .about-container {
+        max-width: 90%; /* Reducimos aún más el ancho máximo en dispositivos móviles */
+    }
+}
