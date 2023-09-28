@@ -6,7 +6,7 @@ import './Catalogo.scss';
 const Catalogo = ({}) => {
   return (
     <div className='catalogo-container'>
-      <h1>Catalogo</h1>
+      <h1>Modelos</h1>
       <div className='models-container'>
         {modelos.map((modelo) => (
             <div className='modelo-catalogo' key={modelo.nombre}>

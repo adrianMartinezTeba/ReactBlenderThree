@@ -1,7 +1,19 @@
-.nav-container{
+.nav-container {
     display: flex;
+    justify-content: center;
+    background-color: rgba(27, 31, 35, 0.77);
+    width: 100%;
  
-    .item-nav{
-        margin: 5px;
-    }
+}
+
+.item-nav {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.item-nav:hover {
+    background-color: rgb(143, 176, 209);
 }

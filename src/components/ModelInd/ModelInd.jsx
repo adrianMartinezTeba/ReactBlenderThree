@@ -17,10 +17,12 @@ console.log(modelo);
 },[modelo])
   return (
     <div className='model-ind-container'>
-     <ModelViewer url={modelo.urlInd} escala={modelo.escalaInd} ind={true} />
+     <div className='model-ind'>
+       <ModelViewer url={modelo.urlInd} escala={modelo.escalaInd} ind={true} />
+     </div>
      <div className='model-details'>
        <h2>{modelo.nombre}</h2>
-       <p>{modelo.descripcion}</p>
+       <p>Descripción: {modelo.descripcion}</p>
      </div>
     </div>
   );

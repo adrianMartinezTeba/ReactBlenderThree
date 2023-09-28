@@ -1,14 +1,21 @@
 .catalogo-container {
+  
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: rgba(169, 219, 255, 0.77);
-    height: fit-content;
     width: fit-content;
+    height: fit-content;
+    border:2px solid black;
+    margin-top: 50px;
+    padding: 10px;
 }
 
 .models-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
     .modelo-catalogo {
         margin-right: 10px;
