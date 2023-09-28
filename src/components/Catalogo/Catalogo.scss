@@ -1,0 +1,15 @@
+div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.models-container {
+    display: flex;
+    flex-direction: row;
+
+    .modelo-catalogo {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}

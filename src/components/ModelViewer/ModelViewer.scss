@@ -1,0 +1,28 @@
+// #model-container {
+//     width: 100%;
+//     height: 100vh; // Esto establece la altura del contenedor para ocupar toda la pantalla verticalmente
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: #f0f0f0; // Color de fondo del contenedor
+//   }
+  
+//   canvas {
+//     border: 2px solid #333; // Borde del canvas donde se renderiza el modelo
+//   }
+  .blen{
+ 
+ border: 1px solid #333;
+
+  }
+  .model-container{
+    display: flex;
+    flex-direction: column;
+    canvas{
+      border: 2px solid #333;
+    }
+  }
+  .hola{
+    border: 2px solid #333;
+    background-color: aqua;
+  }
