@@ -30,20 +30,7 @@ const ModelViewer = ({ url, escala, ind }) => {
   useEffect(() => {
     const container = containerRef.current;
     camera.position.set(0, 0, 2);
-    // scene.rotation.set(0,0,0)
-    // scene.rotation.set(0,360,0)
-    // scene.rotation.set(0,180,0)
-    // scene.rotation.set(0,-180,0)
-    // scene.rotation.set(0,-360,0)
-    // scene.rotation.set(0,Math.PI,0)
-    // scene.rotation.set(0, Math.PI*2, 0);
-    // scene.rotation.set(0, 2, 0);
-    // scene.rotation.set(0, 0.8, 0);
     scene.rotation.set(0.2, -0.5, 0);
-
-
-
-
     // Configuración del renderer
     if (ind) {
       // Si es vista individual, ocupa toda la pantalla en vista de ordenador
