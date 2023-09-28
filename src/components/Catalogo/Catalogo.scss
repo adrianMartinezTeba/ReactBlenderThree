@@ -1,7 +1,9 @@
-div {
+.catalogo-container {
     display: flex;
     flex-direction: column;
-
+    background-color: rgba(169, 219, 255, 0.77);
+    height: fit-content;
+    width: fit-content;
 }
 
 .models-container {

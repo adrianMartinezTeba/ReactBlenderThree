@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import './ModelViewer.scss';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
-const ModelViewer = ({ url, escala }) => {
+const ModelViewer = ({ url, escala, ind }) => {
   const loader = new GLTFLoader();
   const containerRef = useRef(null);
   const scene = new THREE.Scene();
@@ -30,10 +30,28 @@ const ModelViewer = ({ url, escala }) => {
   useEffect(() => {
     const container = containerRef.current;
     camera.position.set(0, 0, 2);
-    scene.position.set(0, 0, 0);
+    // scene.rotation.set(0,0,0)
+    // scene.rotation.set(0,360,0)
+    // scene.rotation.set(0,180,0)
+    // scene.rotation.set(0,-180,0)
+    // scene.rotation.set(0,-360,0)
+    // scene.rotation.set(0,Math.PI,0)
+    // scene.rotation.set(0, Math.PI*2, 0);
+    // scene.rotation.set(0, 2, 0);
+    // scene.rotation.set(0, 0.8, 0);
+    scene.rotation.set(0.2, -0.5, 0);
+
+
+
 
     // Configuración del renderer
-    renderer.setSize(300, 300);
+    if (ind) {
+      // Si es vista individual, ocupa toda la pantalla
+      renderer.setSize(500, 500);
+    } else {
+      // Si es vista de catálogo, usa un tamaño fijo
+      renderer.setSize(300, 300);
+    }
     container.appendChild(renderer.domElement);
 
     loader.load(url, function (gltf) {
@@ -57,8 +75,9 @@ const ModelViewer = ({ url, escala }) => {
     }, undefined, function (error) {
       console.error(error);
     });
-
-    renderer.setClearColor(0xaaaaaa); // Cambiar el color de fondo
+ // Generar un color de fondo aleatorio
+ const randomColor = Math.random() * 0xffffff;
+    renderer.setClearColor(randomColor); // Cambiar el color de fondo
 
     const animate = () => {
       requestAnimationFrame(animate);
@@ -67,7 +86,7 @@ const ModelViewer = ({ url, escala }) => {
     };
 
     animate();
-  }, [url, escala]);
+  }, [url, escala, ind]); // Agrega "ind" como dependencia
 
   return (
     <div className='model-container'>
