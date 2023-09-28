@@ -18,7 +18,7 @@ console.log(modelo);
   return (
     <div className='model-ind-container'>
      <div className='model-ind'>
-       <ModelViewer url={modelo.urlInd} escala={modelo.escalaInd} ind={true} />
+       <ModelViewer  width="400px" height="300px" url={modelo.urlInd} escala={modelo.escalaInd} ind={true} />
      </div>
      <div className='model-details'>
        <h2>{modelo.nombre}</h2>

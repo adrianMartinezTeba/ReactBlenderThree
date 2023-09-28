@@ -46,8 +46,13 @@ const ModelViewer = ({ url, escala, ind }) => {
 
     // Configuración del renderer
     if (ind) {
-      // Si es vista individual, ocupa toda la pantalla
-      renderer.setSize(500, 500);
+      // Si es vista individual, ocupa toda la pantalla en vista de ordenador
+      if (window.innerWidth > 768) {
+        renderer.setSize(500, 500);
+      } else {
+        // Si es vista individual en vista móvil, ajusta el tamaño según tus necesidades
+        renderer.setSize(300, 300); // Puedes ajustar este tamaño
+      }
     } else {
       // Si es vista de catálogo, usa un tamaño fijo
       renderer.setSize(300, 300);

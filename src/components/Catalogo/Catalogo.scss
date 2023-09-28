@@ -1,12 +1,12 @@
+/* Estilos generales para todos los tamaños de pantalla */
 .catalogo-container {
-  
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: rgba(169, 219, 255, 0.77);
     width: fit-content;
     height: fit-content;
-    border:2px solid black;
+    border: 2px solid black;
     margin-top: 50px;
     padding: 10px;
 }
@@ -16,9 +16,19 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    height: fit-content;
+    width: fit-content;
     .modelo-catalogo {
         margin-right: 10px;
         margin-left: 10px;
     }
+}
+
+/* Media query para ajustar en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .catalogo-container {
+        width: fit-content; /* Cambiamos el ancho al 90% para dispositivos móviles */
+        margin-top: 0px;
+    }
+ 
 }

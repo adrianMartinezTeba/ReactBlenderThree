@@ -1,8 +1,14 @@
-.home-container{
+.home-container {
     background-color: rgb(70, 96, 162);
     width: 100%;
-    height:96vh;
+    height: 96vh;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
+}
 
+/* Media query para vista móvil */
+@media screen and (max-width: 768px) {
+    .home-container {
+        height: 100%; /* Cambiamos la altura al 100% del alto de la ventana en vista móvil */
+    }
 }
