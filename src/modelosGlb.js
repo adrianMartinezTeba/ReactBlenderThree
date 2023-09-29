@@ -5,7 +5,7 @@ const modelos = [
         urlInd:'../../Mesa/pruebaM.gltf',
         escalaCat:0.1,
         escalaInd:0.05,
-        descripcion: "Mesa básica mi primera creación cuando empecé a usar blender para ver como funcionaba Blender"
+        descripcion: "Mesa básica mi primera creación cuando empecé a usar blender para ver como funcionaba Blender."
     },
     {
         nombre: 'Taza',
@@ -13,7 +13,7 @@ const modelos = [
         urlInd:'../../Taza/taza.gltf',
         escalaCat: 0.2,
         escalaInd:0.3,
-        descripcion: "Taza con una imágen diseñada por mi mismo "
+        descripcion: "Taza con una imágen diseñada por mí mismo."
     },
     {
         nombre: 'Coche',
@@ -21,14 +21,14 @@ const modelos = [
         urlInd:'../../Coche/coche.gltf',
         escalaCat: 0.2,
         escalaInd:0.3,
-        descripcion: "Coche,modelo importado con licencia gratuita"
+        descripcion: "Coche,modelo importado con licencia gratuita."
     },{
         nombre: 'Ajedrez',
         urlCatalogo: './Chess/Chess.gltf',
         urlInd:'../../Chess/Chess.gltf',
         escalaCat: 0.2,
         escalaInd:0.3,
-        descripcion: "Ajedrez,modelo importado con licencia gratuita"
+        descripcion: "Ajedrez,modelo importado con licencia gratuita."
     }
 ]
 export default modelos;
