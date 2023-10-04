@@ -29,6 +29,13 @@ const modelos = [
         escalaCat: 0.2,
         escalaInd:0.3,
         descripcion: "Ajedrez,modelo importado con licencia gratuita."
+    },{
+        nombre: 'Faro',
+        urlCatalogo: './Faro/islaFaro.gltf',
+        urlInd:'../../Faro/islaFaro.gltf',
+        escalaCat: 0.2,
+        escalaInd:0.3,
+        descripcion: "Faro en una isla y una casa,hecho por mí."
     }
 ]
 export default modelos;
