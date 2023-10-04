@@ -23,13 +23,6 @@ const modelos = [
         escalaInd:0.3,
         descripcion: "Coche,modelo importado con licencia gratuita."
     },{
-        nombre: 'Ajedrez',
-        urlCatalogo: './Chess/Chess.gltf',
-        urlInd:'../../Chess/Chess.gltf',
-        escalaCat: 0.2,
-        escalaInd:0.3,
-        descripcion: "Ajedrez,modelo importado con licencia gratuita."
-    },{
         nombre: 'Faro',
         urlCatalogo: './Faro/islaFaro.gltf',
         urlInd:'../../Faro/islaFaro.gltf',
