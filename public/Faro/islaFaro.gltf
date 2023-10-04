@@ -428,7 +428,7 @@
 		{
 			"bufferView":24,
 			"componentType":5126,
-			"count":256,
+			"count":81,
 			"max":[
 				8.664789199829102,
 				-1.162316918373108,
@@ -444,13 +444,13 @@
 		{
 			"bufferView":25,
 			"componentType":5126,
-			"count":256,
+			"count":81,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":26,
 			"componentType":5126,
-			"count":256,
+			"count":81,
 			"type":"VEC2"
 		},
 		{
@@ -607,32 +607,32 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":3072,
+			"byteLength":972,
 			"byteOffset":84088,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":3072,
-			"byteOffset":87160,
+			"byteLength":972,
+			"byteOffset":85060,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":2048,
-			"byteOffset":90232,
+			"byteLength":648,
+			"byteOffset":86032,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":768,
-			"byteOffset":92280,
+			"byteOffset":86680,
 			"target":34963
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":93048,
+			"byteLength":87448,
 			"uri":"islaFaro.bin"
 		}
 	]
